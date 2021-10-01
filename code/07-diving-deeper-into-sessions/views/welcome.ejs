@@ -1,0 +1,14 @@
+<%- include('includes/head.ejs', { title: 'Welcome' }) %>
+</head>
+<body>
+  <%- include('includes/header.ejs') %>
+  <main>
+    <h1>Welcome to this demo!</h1>
+    <p>By the end of this demo <a href="/admin">/admin</a> should only be accessible if you're logged in.</p>
+    <p>The <a href="/">home page</a> should only be accessible, 
+      <a href="/signup">/signup</a> and <a href="/login">/login</a> 
+      should only be reachable (and visible in the navigation) if you're 
+      <strong>NOT</strong> logged in yet!</p>
+  </main>
+</body>
+</html>
