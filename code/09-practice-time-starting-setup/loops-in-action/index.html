@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Loops</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>JavaScript Loops in Action</h1>
+  <section id="calculator">
+    <h2>JavaScript Calculator</h2>
+    <p>Determine the sum of all numbers (beginning at zero) up to a number of your choice.</p>
+    <div class="control">
+      <label for="user-number">Your Number</label>
+      <input type="number" id="user-number">
+    </div>
+    <button>Calculate Sum</button>
+    <p id="calculated-sum" class="output"></p>
+  </section>
+
+  <section id="highlight-links">
+    <h2>Highlight Links</h2>
+    <button>Highlight all links in the text</button>
+    <p>This is some text that also contains useful links (like <a href="">this one</a> that actually lead nowhere. They
+      lead nowhere because this text and example is <strong>not</strong> about the anchor elements or the link
+      destinations but instead about JavaScript.</p>
+    <p>Because you can use <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a> (okay, this
+      link actually <strong>does</strong> lead somewhere) not
+      just for funny demos or useless examples but for real useful things - like highlighting all the links in a text.
+    </p>
+    <p>You can dive even deeper into JavaScript with one of our bestselling, deep-dive, JavaScript-focused <a
+        href="https://academind.com/courses/">courses</a>.</p>
+  </section>
+
+  <section id="user-data">
+    <h2>Your Information</h2>
+    <button>Display User Data</button>
+    <ul id="output-user-data"></ul>
+  </section>
+
+  <section id="statistics">
+    <h2>Statistics</h2>
+    <p>Test your luck and find out how many dice rolls (1-6 dice) it takes you to roll a certain number (between 1 and
+      6).</p>
+    <div class="control">
+      <label for="user-target-number">Your Target Number</label>
+      <input type="number" min="1" max="6" id="user-target-number">
+    </div>
+    <button>Roll the Dice</button>
+    <ul id="dice-rolls"></ul>
+    <p>It took you <span id="output-total-rolls" class="output">X</span> rolls to roll a <span id="output-target-number" class="output">Y</span>.</p>
+  </section>
+</body>
+
+</html>
