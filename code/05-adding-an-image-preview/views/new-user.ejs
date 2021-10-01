@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Profile</title>
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/profiles.css">
+  <script src="/scripts/file-preview.js" defer></script>
+</head>
+<body>
+  <main id="new-user">
+    <form action="/profiles" method="POST" enctype="multipart/form-data">
+      <div class="form-control">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-control">
+        <img id="image-preview" src="" alt="Your picked image.">
+        <label for="image">User image</label>
+        <input type="file" id="image" name="image" required accept="image/jpg,image/png">
+      </div>
+      <button class="btn">Save User</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+#user-controls,
+#new-user,
+.user-item {
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#user-profiles ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-item article {
+  display: flex;
+  align-items: center;
+}
+
+.user-item img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-item h2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin: 0.5rem 1rem;
+  color: rgb(97, 92, 92);
+}
+
+#new-user {
+  text-align: left;
+}
+
+.form-control {
+  margin: 0.5rem 0;
+}
+
