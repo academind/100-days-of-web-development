@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', { title: 'Post title' }) %>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/forms.css" />
+    <link rel="stylesheet" href="/styles/posts.css" />
+  </head>
+
+  <body>
+    <%- include('includes/header') %>
+    <main id="post-detail">
+      <h1><%= post.title %></h1>
+      <section id="post-meta">
+        <address>
+          <a href="mailto:<%= post.author.email %>"><%= post.author.name %></a>
+        </address>
+        | <time datetime="<%= post.date %>"><%= post.humanReadableDate %></time>
+      </section>
+      <hr />
+      <section>
+        <p id="body"><%= post.body %></p>
+      </section>
+      <section id="comments">
+        <% if (!comments) { %>
+        <p>
+          This post might have comments. You can load them if you want to view
+          them.
+        </p>
+        <form action="/posts/<%= post._id %>/comments" method="GET">
+          <button class="btn btn-alt">Load Comments</button>
+        </form>
+        <% } else if (comments.length === 0) { %>
+          <p>No comments found.</p>
+        <% } else { %>
+          <ol>
+            <% for (const comment of comments) { %>
+              <li>
+                <%- include('includes/comment-item', { comment: comment }) %>
+              </li>
+            <% } %>
+          </ol>
+        <% } %>
+      </section>
+      <section id="comments-form">
+        <h2>Leave a comment</h2>
+        <form action="/posts/<%= post._id %>/comments" method="POST">
+          <div class="form-control">
+            <label for="title">Comment title</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-control">
+            <label for="text">Your comment</label>
+            <textarea name="text" id="text" rows="3" required></textarea>
+          </div>
+          <button class="btn">Save Comment</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
