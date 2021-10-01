@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(40deg, rgb(39, 39, 38), rgb(22, 22, 20));
+}
+
+#main-header {
+  text-align: center;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-header img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+#main-header h1 {
+  margin: 0;
+  color: rgb(204, 157, 30);
+  font-size: 3.5rem;
+}
+
+main p {
+  margin: 1rem;
+  color: rgb(243, 226, 179);
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+main time {
+  background-color: rgb(241, 191, 183);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  color: rgb(31, 29, 26);
+}
+
+main a {
+  text-decoration: none;
+  color: rgb(228, 118, 98);
+}
+
+#course-content {
+  margin: 4rem auto;
+  width: 90%;
+  max-width: 50rem;
+  list-style: none;
+  padding: 1rem 0;
+  border-top: 3px solid rgb(204, 157, 30);
+}
+
+.content-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  background-color: rgb(31, 29, 26);
+  color: rgb(214, 189, 115);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+<%- include('includes/head', { pageTitle: 'I am a Web Developer!' }) %>
+</head>
+<body>
+  <%- include('includes/header') %>
+  <main>
+    <section>
+      <p>
+        I successfully completed the
+        <a href="">"Web Development - The Complete Guide"</a> course on
+        <time datetime="2022-03-10">March 10th 2022</time>!
+      </p>
+    </section>
+    
+    <section id="likes">
+      <% if (numberOfLikes > 0) { %>
+        <p>This was liked <%= numberOfLikes %> times (last like on <%= lastLikedDate %>).</p>
+      <% } else { %>
+        <p>Nobody liked this yet :(</p>
+      <% } %>
+      
+      <form action="/likes" method="POST">
+        <button>I like that!</button>
+      </form>
+    </section>
+    
+    <section>
+      <h2>Here's a summary of the key topics I learned about</h2>
+  
+      <%- include('includes/course-content') %>
+    </section>
+  </main>
+</body>
+</html> 
