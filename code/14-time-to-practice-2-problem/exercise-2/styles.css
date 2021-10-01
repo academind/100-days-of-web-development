@@ -1,0 +1,31 @@
+body {
+  margin: 3rem;
+  font-family: sans-serif;
+  text-align: center;
+  color: rgb(48, 47, 36);
+}
+
+section {
+  margin: 3rem auto;
+  width: 95%;
+  max-width: 50rem;
+  background-color: rgb(249, 252, 223);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  background-color: rgb(221, 217, 5);
+  border: 1px solid rgb(221, 217, 5);
+  color:rgb(24, 24, 11);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgb(221, 199, 5);
+  border-color: rgb(221, 199, 5);
+}
