@@ -1,0 +1,14 @@
+{
+  "name": "web-development-complete-guide",
+  "version": "1.0.0",
+  "description": "Getting started with Node & Express!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maximilian Schwarzmueller",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
