@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/todos.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Todo Management</h1>
+      <p>Manage your (daily) todos with ease!</p>
+    </header>
+    <main>
+      <section id="todo-management">
+        <form>
+          <label for="text">Todo text</label>
+          <input type="text" id="text" name="text" required />
+          <button>Save</button>
+        </form>
+      </section>
+      <section id="todos">
+        <ul id="todos-list">
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
