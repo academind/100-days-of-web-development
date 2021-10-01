@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eatwell - Make The World A Tastier Place</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <link rel="stylesheet" href="styles/recommend.css" />
+    <script src="scripts/responsive.js" defer></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div id="logo"><a href="/">Eatwell</a></div>
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <a href="/restaurants">Browse Restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a href="/recommend">Share a Restaurant</a>
+          </li>
+          <li class="nav-item"><a href="/about">About Eatwell</a></li>
+        </ul>
+      </nav>
+      <button id="drawer-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <aside id="mobile-drawer">
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <a href="/restaurants">Browse Restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a href="/recommend">Share a Restaurant</a>
+          </li>
+          <li class="nav-item"><a href="/about">About Eatwell</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <h1>Share your favorite restaurant!</h1>
+      <form action="/recommend" method="POST">
+        <div class="form-control">
+          <label for="name">Restaurant name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-control">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+        <div class="form-control">
+          <label for="cuisine">Type of cuisine</label>
+          <input
+            type="text"
+            id="cuisine"
+            name="cuisine"
+            placeholder="e.g. Mexican"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="website">Restaurant website</label>
+          <input type="url" id="website" name="website" />
+        </div>
+        <div class="form-control">
+          <label for="description">Why do you recommend it?</label>
+          <textarea
+            name="description"
+            id="description"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button>Share Restaurant</button>
+      </form>
+    </main>
+  </body>
+</html>
