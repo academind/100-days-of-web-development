@@ -1,0 +1,40 @@
+<%- include('includes/head.ejs', { title: 'Discussion' }) %>
+<link rel="stylesheet" href="/styles/forms.css">
+</head>
+<body>
+  <%- include('includes/header.ejs') %>
+  <main>
+    <h1>Discuss!</h1>
+    <section>
+      <form action="/discussion" method="GET">
+        <div class="form-control">
+          <label for="author">Filter by author</label>
+          <input type="search" id="author" name="author">
+        </div>
+        <button class="btn">Find Comments</button>
+      </form>
+      <ol>
+        <% for (const comment of comments) { %>
+          <li>
+            <%= comment.text %> (<%= comment.author %>)
+          </li>
+        <% } %>
+      </ol>
+    </section>
+    <section>
+
+      <form action="/discussion/comment" method="POST">
+        <div class="form-control">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-control">
+          <label for="comment">My Comment</label>
+          <textarea name="comment" id="comment" rows="5"></textarea>
+        </div>
+        <button class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

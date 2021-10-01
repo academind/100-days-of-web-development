@@ -1,0 +1,29 @@
+<%- include('includes/head.ejs', { title: 'Discussion' }) %>
+<link rel="stylesheet" href="/styles/forms.css">
+</head>
+<body>
+  <%- include('includes/header.ejs') %>
+  <main>
+    <h1>Discuss!</h1>
+    <section>
+      <ol>
+        <% for (const comment of comments) { %>
+          <li>
+            <%- comment.text %>
+          </li>
+        <% } %>
+      </ol>
+    </section>
+    <section>
+
+      <form action="/discussion/comment" method="POST">
+        <div class="form-control">
+          <label for="comment">My Comment</label>
+          <textarea name="comment" id="comment" rows="5"></textarea>
+        </div>
+        <button class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

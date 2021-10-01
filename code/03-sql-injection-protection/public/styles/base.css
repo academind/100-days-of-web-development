@@ -1,0 +1,104 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 40rem;
+  text-align: center;
+}
+
+a {
+  color:rgb(70, 0, 128);
+}
+
+a:hover,
+a:active {
+  color: rgb(113, 0, 128);
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 1rem 0;
+  border-bottom: 1px solid rgb(63, 60, 60);
+}
+
+#main-header {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(70, 0, 128);
+}
+
+#main-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-header li {
+  margin: 0 1rem;
+}
+
+#main-header a {
+  text-decoration: none;
+  color: white;
+}
+
+#main-header button {
+  font: inherit;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: white;
+  padding: 0;
+}
+
+#main-header a:hover,
+#main-header a:active,
+#main-header button:hover,
+#main-header button:active {
+  color: rgb(209, 88, 233);
+}
+
+.btn {
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(70, 0, 128);
+  border: 1px solid rgb(70, 0, 128);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(57, 1, 102);
+  border-color: rgb(57, 1, 102);
+}
+
+.btn.btn-alt {
+  background-color: transparent;
+  border: none;
+  color:rgb(70, 0, 128);
+}
+
+.btn.btn-alt:hover,
+.btn.btn-alt:active {
+  background-color: rgb(231, 212, 246);
+}

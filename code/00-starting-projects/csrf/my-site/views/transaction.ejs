@@ -1,0 +1,21 @@
+<%- include('includes/head.ejs', { title: 'Transaction' }) %>
+<link rel="stylesheet" href="/styles/forms.css">
+</head>
+<body>
+  <%- include('includes/header.ejs') %>
+  <main>
+    <h1>Send Money</h1>
+    <form action="/transaction" method="POST">
+      <div class="form-control">
+        <label for="recipient">Recipient Email</label>
+        <input type="email" id="recipient" name="recipient">
+      </div>
+      <div class="form-control">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" name="amount">
+      </div>
+      <button class="btn">Send</button>
+    </form>
+  </main>
+</body>
+</html>
