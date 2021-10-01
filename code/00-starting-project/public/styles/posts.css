@@ -1,0 +1,56 @@
+/* All posts page */
+
+#all-posts {
+  text-align: center;
+}
+
+#posts-list {
+  margin: 3rem auto;
+  max-width: 40rem;
+}
+
+.post-item {
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: rgb(220, 204, 252);
+}
+
+.post-item h2,
+.post-item p {
+  margin: 0.5rem 0;
+}
+
+.post-item-author {
+  font-style: italic;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-actions .btn-alt {
+  padding: 0;
+}
+
+/* Post detail page */
+
+#post-meta {
+  color: rgb(156, 149, 149);
+}
+
+#post-meta address {
+  display: inline;
+}
+
+#post-meta time {
+  font-style: italic;
+}
+
+#body {
+  white-space: pre-wrap; /* This ensures that line breaks and whitespace are kept */
+}
