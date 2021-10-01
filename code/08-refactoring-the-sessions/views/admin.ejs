@@ -1,0 +1,33 @@
+<%- include('includes/head.ejs', { title: 'Admin' }) %>
+<link rel="stylesheet" href="/styles/forms.css">
+<link rel="stylesheet" href="/styles/posts.css">
+</head>
+<body>
+  <%- include('includes/header.ejs') %>
+  <main>
+    <h1>Administrate Blog Posts</h1>
+    <section>
+      <h2>Create a New Post</h2>
+      <%- include('includes/post-form', { 
+        submitUrl: '/posts', 
+        hasError: inputData.hasError, 
+        errorMessage: inputData.message, 
+        title: inputData.title, 
+        content: inputData.content }) 
+      %>
+    </section>
+    <section>
+      <h2>All Blog Posts</h2>
+      <% if (!posts || posts.length === 0) { %>
+        <p>Could not find any posts. You need to first create some!</p>
+      <% } else { %>
+        <ul id="posts-list">
+          <% for (const post of posts) { %>
+            <%- include('includes/post-item', { title: post.title, postId: post._id }) %>
+          <% } %>
+        </ul>
+      <% } %>
+    </section>
+  </main>
+</body>
+</html>

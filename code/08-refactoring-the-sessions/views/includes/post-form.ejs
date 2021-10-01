@@ -1,0 +1,15 @@
+<form action="<%= submitUrl %>" method="POST">
+  <% if (hasError) { %>
+    <p id="input-error"><%= errorMessage %></p>
+  <% } %>
+  <input type="hidden" value="<%= locals.csrfToken %>" name="_csrf">
+  <div class="form-control">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" value="<%= title %>" required>
+  </div>
+  <div class="form-control">
+    <label for="content">Content</label>
+    <textarea name="content" id="content" rows="6" required><%= content %></textarea>
+  </div>
+  <button class="btn">Save</button>
+</form>

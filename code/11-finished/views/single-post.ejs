@@ -1,0 +1,16 @@
+<%- include('includes/head.ejs', { title: 'View & Edit Blog Post' }) %>
+<link rel="stylesheet" href="/styles/forms.css">
+</head>
+<body>
+  <%- include('includes/header.ejs') %>
+  <main>
+    <%- include('includes/post-form', { 
+      submitUrl: '/posts/' + post.id + '/edit', 
+      hasError: inputData.hasError, 
+      errorMessage: inputData.message, 
+      title: inputData.title, 
+      content: inputData.content }) 
+    %>
+  </main>
+</body>
+</html>

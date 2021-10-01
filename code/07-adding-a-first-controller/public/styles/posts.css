@@ -1,0 +1,23 @@
+#posts-list {
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.post-item {
+  margin: 1rem auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.post-item .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-item a,
+.post-item button {
+  margin: 0 0.5rem;
+}
