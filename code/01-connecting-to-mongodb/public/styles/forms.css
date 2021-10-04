@@ -3,6 +3,10 @@ form {
   margin: 2rem auto;
 }
 
+h1 {
+  text-align: center;
+}
+
 label {
   font-weight: bold;
   display: block;
