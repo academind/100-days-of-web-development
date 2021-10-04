@@ -27,7 +27,7 @@ router.post('/signup', async function (req, res) {
     !enteredEmail ||
     !enteredConfirmEmail ||
     !enteredPassword ||
-    enteredPassword.trim() < 6 ||
+    enteredPassword.trim().length < 6 ||
     enteredEmail !== enteredConfirmEmail ||
     !enteredEmail.includes('@')
   ) {
