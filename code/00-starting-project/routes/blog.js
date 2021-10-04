@@ -59,7 +59,7 @@ router.post('/signup', async function (req, res) {
     !enteredEmail ||
     !enteredConfirmEmail ||
     !enteredPassword ||
-    enteredPassword.trim() < 6 ||
+    enteredPassword.trim().length < 6 ||
     enteredEmail !== enteredConfirmEmail ||
     !enteredEmail.includes('@')
   ) {
@@ -224,7 +224,7 @@ router.get('/posts/:id/edit', async function (req, res) {
   const post = await db.getDb().collection('posts').findOne({ _id: postId });
 
   if (!post) {
-    return res.render('404');
+    return res.render('404'); // 404.ejs is missing at this point - it will be added later!
   }
 
   let sessionInputData = req.session.inputData;
