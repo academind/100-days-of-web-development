@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Todo Management</h1>
+      <p>Manage your (daily) todos with ease!</p>
+    </header>
+    <main id="todos-app">
+      <h2>{{ newTodo }}</h2>
+      <p>{{ newTodo }}</p>
+      <section id="todo-management">
+        <form @submit="saveTodo">
+          <label for="text">Todo text</label>
+          <input type="text" id="text" v-model="enteredTodoText" required />
+          <button>Save</button>
+        </form>
+      </section>
+      <section id="todos">
+        <ul id="todos-list">
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
