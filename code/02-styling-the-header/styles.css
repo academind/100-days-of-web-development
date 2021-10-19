@@ -1,0 +1,45 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: rgb(44, 41, 38);
+}
+
+a {
+  text-decoration: none;
+}
+
+#main-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(29, 26, 24);
+  padding: 0 20px;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
+}
+
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#main-header li {
+  margin: 0 16px;
+}
+
+#main-header nav a {
+  color: rgb(185, 131, 31);
+  font-size: 20px;
+}
+
+#main-header nav a:hover {
+  color: rgb(228, 163, 44);
+}
