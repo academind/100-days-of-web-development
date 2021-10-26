@@ -1,6 +1,6 @@
 # Supplementary Course Resources
 
-This repository contains course code and other resources (e.g. slides) that are shown, created or used in our [complete web development course](https://udemy.com/course/100-days-of-web-development).
+This repository contains course code and other resources (e.g. slides) that are shown, created or used in our [complete web development course](https://acad.link/web-dev).
 
 You may use these resources to compare your code against our code snapshots (e.g. to find + fix errors) or to download and view the slides shown in the lectures.
 
