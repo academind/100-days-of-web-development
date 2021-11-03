@@ -63,6 +63,7 @@
 
 #destinations {
   display: flex;
+  justify-content: center;
   width: 90%;
   margin: auto;
   margin-bottom: 40px;
