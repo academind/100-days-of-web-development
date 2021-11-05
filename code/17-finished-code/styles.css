@@ -72,6 +72,7 @@
 .destination {
   margin: 0 20px;
   text-transform: uppercase;
+  width: 25%;
 }
 
 .destination p {
