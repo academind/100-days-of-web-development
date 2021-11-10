@@ -48,6 +48,7 @@ h1 {
   margin: 30px 50px;
 }
 
+
 .sub-feature {
   display: flex;
 }
@@ -60,8 +61,9 @@ h1 {
 .sub-feature-text {
   color: rgb(58, 58, 58);
   padding: 2px;
-  margin: 5px;
+  margin: 5px;   
 }
+
 
 .button-container {
   text-align: center;
@@ -86,3 +88,4 @@ h1 {
   background-color: rgb(0, 170, 255);
   border: 2px solid rgb(255, 255, 255);
 }
+
