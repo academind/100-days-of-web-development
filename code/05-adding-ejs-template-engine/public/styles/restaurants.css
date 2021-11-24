@@ -1,0 +1,56 @@
+main {
+  max-width: 40rem;
+}
+
+#restaurants-list {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.restaurant-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(250, 233, 194);
+  color: rgb(110, 78, 7);
+  text-align: left;
+}
+
+.restaurant-item h2 {
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+}
+
+.restaurant-item p {
+  margin: 0.2rem 0;
+  color: rgb(110, 78, 7);
+}
+
+.restaurant-meta {
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-meta p {
+  color: rgb(170, 148, 95);
+}
+
+.restaurant-actions {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.restaurant-actions a {
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(202, 158, 62);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+}
+
+.restaurant-actions a:hover,
+.restaurant-actions a:active {
+  background-color: rgb(202, 141, 62);
+}
