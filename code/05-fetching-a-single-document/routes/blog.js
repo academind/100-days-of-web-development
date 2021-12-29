@@ -15,7 +15,8 @@ router.get('/posts', async function (req, res) {
   const posts = await db
     .getDb()
     .collection('posts')
-    .find({}, { title: 1, summary: 1, 'author.name': 1 })
+    .find({})
+    .project({ title: 1, summary: 1, 'author.name': 1 })
     .toArray();
   res.render('posts-list', { posts: posts });
 });
