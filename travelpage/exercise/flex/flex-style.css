@@ -1,0 +1,30 @@
+#container {
+  background-color: rgb(82, 23, 81);
+  padding: 10px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p {
+  background-color: rgb(211, 88, 209);
+  margin: 10px;
+  width: 250px;
+}
+
+ul {
+  background-color: rgb(250, 146, 63);
+  list-style: none;
+  width: 250px;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  background-color: rgb(238, 212, 192);
+  width: 100px;
+  text-align: right;
+}

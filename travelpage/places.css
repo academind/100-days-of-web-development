@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(30deg, rgb(99,99,99), rgb(40,40,40));
+}
+
+header {
+    position: static;
+    
+}
+
+#page-logo a {
+    color: rgb(20, 230, 200);
+}
+
+header a {
+    color: rgb(20, 230, 200);
+}
+
+header nav a:hover {
+    background-color: rgb(4, 81, 97);
+    color: black;
+}
+
+.item-content {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-content p {
+    color: rgb(99,99,99)
+
+}
+
+.action-items {
+    text-align: right;
+}
+
+.action-items a {
+    text-decoration: none;
+    color: rgb(20, 230, 200);
+    padding: 6px;
+}
+
+.action-items a:hover {
+    background-color: rgb(255, 251, 0);
+    border-radius: 5px;
+}
+
+main ul {
+    width: 1200px;
+    margin: 0 auto 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+
+main li:nth-of-type(3) {
+    grid-column: 1 / span 2;
+    width: 100%
+}
+
+main li {
+    display: flex;
+    background-color: white ;
+    box-shadow: 1px 1px 4px rgb(255, 251, 0);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+main li img {
+    width: 300px;
+    height: 280px;
+    object-fit: cover;
+    
+}
+
