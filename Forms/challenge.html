@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Forms/challenge.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <form action="/Forms/challenge.html" method="GET">
+            <section>
+                <header>
+                    <h2>How can we help you?</h2>
+                </header>
+                <ul>
+                    <li>
+                        <label for="text">Your Name</label>
+                        <input type="text" placeholder="First Middle Inital Last" name="text" id="text">
+                    </li>
+
+                    <li>
+                        <label for="email">Your E-Mail Address</label>
+                        <input type="email" placeholder="youremail@domain.com" name="email" id="email">
+                    </li>
+
+                    <li>
+                        <label for="phone">Your Phone number</label>
+                        <input type="tel" placeholder="000-000-0000"name="phone" id="phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </li>
+
+                    <li>
+                        <label for="textarea">Your Message</label>
+                        <textarea name="textarea" id="rextare" cols="30" rows="10"
+                            placeholder="Enter a message here (Optional)"></textarea>
+                    </li>
+
+                    <li>
+                        <label for="select">How did you find us?</label>
+                        <select name="select" id="select">
+                            <option value="Google">Google</option>
+                            <option value="WOM">Word of Mouth</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <header>
+                    <h2>How should we reply?</h2>
+                </header>
+                <ul>
+                    <li class="selectables">
+                        <input type="radio" name="radio" id="radio1" value="1" required>
+                        <label for="radio1">Call Me</label>
+                    </li>
+
+                    <li class="selectables">
+                        <input type="radio" name="radio" id="radio2" value="2" required>
+                        <label for="radio2">Send me an email</label>
+                    </li>
+
+                    <li class="selectables">
+                        <input type="radio" name="radio" id="radio3" value="3" required>
+                        <label for="radio3">Don't Reply</label>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section>
+                <div class="selectables">
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                    <label for="checkbox">Accept Terms</label>
+                </div>
+            </section>
+
+            <section>
+                <ul id="buttons">
+                    <li><button type="reset" id="reset-btn">Clear</button></li>
+                    <li><button type="submit" id="submit">Submit</button></li>
+                </ul>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>

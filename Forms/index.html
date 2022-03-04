@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Forms/styles.css">
+</head>
+
+<body>
+    <form action="/Forms/index.html" method="GET">
+        <label for="Name">Your Name</label>
+        <input type="text" name="DemoData" id="Name">
+        <label for="textarea">Your Message</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        <label for="myemail">This your email homie!</label>
+        <input type="email" name="email" id="myemail">
+        <label for="userage">How old are you?</label>
+        <input type="number" name="user-age" id="userage">
+        <label for="pass">Password Do Not Share</label>
+        <input type="password" name="password" id="pass">
+        <label for="birthday">Its your birthday</label>
+        <input type="date" name="bday" id="birthday">
+        <hr>
+        <label for="select"></label>
+        <select name="select" id="select">
+            <option value="option1">Blue</option>
+            <option value="option2">Black</option>
+        </select>
+        <h2>Please Pick One</h2>
+        <div class="radiobutton">
+            <input type="radio" name="radio" id="rd1" value="1">
+            <label for="rd1">SMS</label>
+        </div>
+        <div class="radiobutton">
+            <input type="radio" name="radio" id="rd2" value="2">
+            <label for="rd2">Email</label>
+        </div>
+        <div class="radiobutton">
+            <input type="radio" name="radio" id="rd3" value="3">
+            <label for="rd3">Call</label>
+        </div>
+        <div class="radiobutton">
+            <input type="checkbox" name="check" id="check1">
+            <label for="check1">Agree to terms?</label>
+        </div>
+        <div class="radiobutton">
+            <input type="checkbox" name="check" id="check2">
+            <label for="check2">Contact Me?</label>
+        </div>
+        <div class="radiobutton">
+            <input type="checkbox" name="check" id="check3">
+            <label for="check3">Contact Me2?</label>
+        </div>
+        <button>Click Me!</button>
+    </form>
+</body>
+
+</html>

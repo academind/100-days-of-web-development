@@ -1,0 +1,63 @@
+body {
+    background-color: darkgray;
+    margin: 8rem;
+    font-family: "Roboto", sans-serif;
+}
+
+form {
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: rgb(4, 163, 4);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+label {
+    margin-bottom: .5rem;
+    display: block;
+}
+
+input, 
+textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgb(255, 136, 0);
+    padding: .25rem;
+    color: rgb(131, 4, 163)
+}
+
+input:focus, 
+textarea:focus {
+    background-color: rgb(0, 245, 0);
+    color: white;
+}
+
+button {
+    display: block;
+    font: inherit;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: violet;
+}
+
+.radiobutton {
+    display: flex;
+}
+
+.radiobutton input {
+    width: auto;
+    margin-right: 1em;
+}
+
+select {
+    width: 10em;
+}
