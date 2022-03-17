@@ -1,0 +1,25 @@
+<%- include('../../shared/includes/head', { pageTitle: 'All Products' }) %>
+<link rel="stylesheet" href="/styles/products.css">
+<script src="/scripts/product-management.js" defer></script>
+</head>
+<body>
+  <%- include('../../shared/includes/header') %>
+  <main>
+    <h1>Product Administration</h1>
+    <section>
+      <h2>Manage Products</h2>
+      <p>
+        <a href="/admin/products/new" class="btn">Add Product</a>
+      </p>
+    </section>
+    <section>
+      <ul id="products-grid">
+        <% for (const product of products) { %>
+          <li>
+            <%- include('../../shared/includes/product-item', { product: product }) %>
+          </li>
+        <% } %>
+      </ul>
+    </section>
+  </main>
+<%- include('../../shared/includes/footer') %>
