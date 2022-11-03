@@ -18,3 +18,8 @@ a {
 a:hover {
   text-decoration: underline;
 }
+h3{
+  font_family: arial;
+  text_align: center;
+  color: rgb(167, 1, 78);
+}
