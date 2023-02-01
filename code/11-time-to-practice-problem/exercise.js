@@ -18,4 +18,4 @@
 //    - The "main goals" variable should also be dynamic: The command should work 
 //      with ANY list of values
 //    - The custom command should provide the accessed value (i.e. the list element)
-// 6) Execute your custom command from (5) and output ("alert") the result
+// 6) Execute your custom command from step 5) and output ("alert") the result of the first identifier of the "goals" array.
