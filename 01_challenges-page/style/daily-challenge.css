@@ -1,0 +1,51 @@
+main{ /*내가*/
+  width:800px;
+  margin: 200px auto 72px auto;
+  background-color: rgb(219, 108, 94);
+  padding: 24px;
+  border-radius: 8px;
+  border: 5px solid rgb(44, 44, 44);
+  box-shadow: 1px 2px 8px rgba(0,0,0,0.3);
+  
+  
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: -134px 0 0 0;  /*내가*/
+  border: 5px solid rgb(44, 44, 44); /*내가*/
+
+}
+
+h1{
+  font-size: 30px;
+  color: rgb(31, 25, 25);
+}
+
+a{
+  color: rgb(73, 29, 50);
+}
+
+span { /*내가*/
+  color: rgb(66, 2, 2);
+  
+}
+
+#todays-challenge {
+  color: rgb(75, 59, 59);
+  font-weight: bold;
+  font-size: 52px;
+}
+
+/* Absolute : 디바이스별 절대적  -> px
+ Realative : 디바이스별 상대적  -> rm %
+
+ 폴백 폰트 : 처음 폰트를 찾고 불러오는데 실패하면 자동으로 글꼴
+
+ 대체 인라인, 비대체인라인
+ */
+
+
+
