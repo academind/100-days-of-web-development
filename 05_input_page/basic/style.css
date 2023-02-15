@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(65, 63, 63);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 6px;
+    
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    border:1px solid rgb(66, 62, 62);
+    padding: 0.25rem;
+    color: rgb(36, 31, 31);
+}
+
+textarea{
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(219, 190, 253);
+    color:rgb(32, 5, 63);
+    border-color: rgb(32, 5, 63);
+}
+
+button {
+    display: block;
+    /* font: normal 1rem 'Roboto', sans-serif; */
+    font: inherit;
+    background-color: rgb(32, 5, 63);
+    color: white;
+    border: 1px solid rgb(32, 5, 63);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: rgb(78, 10, 155);
+    border-color: rgb(78, 10, 155);
+}
+
+.form-control-inline {
+    display: flex;
+}
+
+.form-control-inline input {
+    width: auto;
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,34 @@
+main {
+  background-color: rgb(82, 23, 81);
+  padding: 10px;
+  width: 1000px;
+  margin: auto;
+}
+
+ul {
+  background-color: rgb(250, 146, 63);
+  list-style: none;
+  width: 800px;
+  margin: 10px auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px 200px;
+}
+
+li {
+  background-color: rgb(238, 212, 192);
+  text-align: center;
+  width: 200px;
+  margin: 20px auto;
+}
+
+/* li:first-of-type{
+  background-color: yellow;
+} */
+
+li:nth-of-type(3) {
+  background-color: yellow;
+  /* grid-column: 1 / 3; */
+  grid-column: 1 / span 2;
+}

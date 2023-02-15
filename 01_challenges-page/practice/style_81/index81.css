@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(243, 234, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 32px;
+}
+header img {
+  width: 300px;
+}
+
+h1 {
+  color: rgb(88, 49, 196);
+  font-size: 52px;
+}
+main {
+  background-color: rgb(122, 74, 218);
+  width: 700px;
+  margin: 32px auto;
+  padding: 32px;
+  border-radius: 8px;
+  color: rgb(248, 241, 255);
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 14px 0;
+  padding-left: 10px;
+  border-left: 5px solid transparent;
+}
+
+a {
+  background-color: rgb(254, 238, 176);
+  text-decoration: none;
+  border-radius: 4px;
+  /* font-family: 'Roboto', sans-serif; */
+  color: rgb(36, 3, 102);
+  padding: 2px 6px;
+}
+
+a:hover,
+a:active {
+  background-color: rgb(250, 201, 39);
+}
+
+.extra-important {
+  color: rgb(255, 237, 177);
+  /* border-left: 5px solid rgb(249,201,39); */
+  border-color: rgb(249, 201, 39);
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+footer a {
+  background-color: rgb(249, 201, 39);
+  text-decoration: none;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(82, 54, 0);
+  padding: 12px 20px;
+}
+
+footer a:hover,
+footer a:active {
+  background-color: rgb(255, 186, 58);
+}
+footer p {
+  color: rgb(131, 113, 149);
+  margin-top: 30px;
+}
