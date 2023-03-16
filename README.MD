@@ -1,3 +1,5 @@
+This project is tested with [BrowserStack](https://www.browserstack.com/)
+
 # Supplementary Course Resources
 
 This repository contains course code and other resources (e.g. slides) that are shown, created or used in our [complete web development course](https://acad.link/web-dev).
